@@ -1,0 +1,84 @@
+/* styles.css */
+body { 
+  margin: 0; 
+  font-family: Arial, Helvetica, sans-serif; 
+  background: #f0f0f0; 
+  color: #000;         
+}
+
+
+.banner {
+  background: #1e3a8a; 
+  color: #fff;         
+  text-align: center;
+  padding: 16px;
+  margin: 12px 0;
+}
+.banner h1, .banner p { margin: 0; }
+
+.nav {
+  list-style: none;
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  padding: 0;
+  margin: 0 0 16px 0;
+}
+.nav a {
+  text-decoration: none;
+  padding: 8px 12px;
+  border: 1px solid #000;  
+  color: #000;             
+  background: #fff;        
+}
+.nav a:hover { 
+  text-decoration: underline; 
+}
+
+.row {
+  display: flex;
+  gap: 2%;
+  padding: 0 12px;
+}
+.main {
+  width: 68%;             
+  background: #fff;       
+  padding: 12px;          
+  margin: 8px 0;          
+}
+.sidebar {
+  width: 30%;             
+  background: #dc2626;    
+  color: #fff;            
+  padding: 12px;
+  margin: 8px 0;
+}
+
+.sidebar:hover { 
+  background: #16a34a;    /* green when hovered */
+}
+
+
+/* form: input grows on focus then shrinks */
+.rps-form input[type="text"], 
+.rps-form select {
+  width: 60%;
+  max-width: 100%;
+  padding: 8px;
+  border: 1px solid #888;   
+  background: #fff;         
+  color: #000;              
+  transition: width .2s linear;
+}
+.rps-form input[type="text"]:focus {
+  outline: none;
+  width: 90%;
+}
+button {
+  padding: 8px 12px;
+  border: none;
+  background: #000;   
+  color: #fff;        
+  cursor: pointer;
+}
+button:hover { opacity: 0.9; }
